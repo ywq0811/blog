@@ -7,7 +7,6 @@
     "deploy": "hexo deploy",
     "server": "hexo server",
     "publish": "cp -rf ./public/* ../ywq0811.github.io/ && cd ../ywq0811.github.io && git pull && git add . && git commit -m 'publish' && git push && cd ../yanBlog",
-    "sh": "npm run build && npm run pubish"
   },
   "hexo": {
     "version": "6.3.0"
