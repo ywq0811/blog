@@ -48,7 +48,7 @@ vim config.json
     "datacenter": "dc1",
     "bootstrap_expect": 1,
     "data_dir": "/consul/data",
-    "log_file": "/consul/log/",
+    "log_file": "/consul/log",
     "log_level": "INFO",	
     "node_name": "consul_server_1",
     "client_addr": "0.0.0.0",
@@ -78,14 +78,14 @@ vim config.json
 
 ![image-20240226172420932](/imgs/image-20240226172420932.png)
 
-`log_file`： 应该是 "/consul/log/"
+`log_file`： 也可以是 "/consul/log/"  //根据版本来的，consul容器内本身是没有log文件夹的，如果没有权限在容器内创建log文件夹，则使用 `/consul/log` 
 
 3.配置启动命令
 
 在`server1` 目录下 创建启动脚本`run.sh`
 
 ```shell
-mkdir run.sh
+vim run.sh
 ```
 
 ```shell
@@ -225,14 +225,14 @@ vim config.json
 
 ![image-20240226161334661](/imgs/image-20240226161334661.png)
 
-`log_file`： 应该是 "/consul/log/"
+`log_file`： 也可以是 "/consul/log/"  //根据版本来的，consul容器内本身是没有log文件夹的，如果没有权限在容器内创建log文件夹，则使用 `/consul/log` 
 
 3.配置启动命令
 
 在`server1` 目录下 创建启动脚本`run.sh`
 
 ```shell
-mkdir run.sh
+vim run.sh
 ```
 
 ```shell
@@ -309,7 +309,7 @@ vim config.json
 在`server2` 目录下 创建启动脚本`run.sh`
 
 ```shell
-mkdir run.sh
+vim run.sh
 ```
 
 ```shell
@@ -493,14 +493,14 @@ vim config.json
 
 ![image-20240226161334661](/imgs/image-20240226161334661.png)
 
-`log_file`： 应该是 "/consul/log/"
+`log_file`： 也可以是 "/consul/log/"  //根据版本来的，consul容器内本身是没有log文件夹的，如果没有权限在容器内创建log文件夹，则使用 `/consul/log` 
 
 3.配置启动命令
 
 在`server1` 目录下 创建启动脚本`run.sh`
 
 ```shell
-mkdir run.sh
+vim run.sh
 ```
 
 ```shell
@@ -578,7 +578,7 @@ vim config.json
 在`server2` 目录下 创建启动脚本`run.sh`
 
 ```shell
-mkdir run.sh
+vim run.sh
 ```
 
 ```shell
@@ -641,7 +641,7 @@ vim config.json
 在`server3` 目录下 创建启动脚本`run.sh`
 
 ```shell
-mkdir run.sh
+vim run.sh
 ```
 
 ```shell

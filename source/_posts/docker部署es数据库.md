@@ -1,12 +1,3 @@
----
-title: docker部署es数据库
-categories:
-  - Docker
-tags:
-  - es
-toc: true # 是否启用内容索引
----
-
 ## docker部署es数据库
 
 1.获取镜像
@@ -23,7 +14,7 @@ mkdir -p /mnt/d/java/share/elasticsearch/data
 mkdir -p /mnt/d/java/share/elasticsearch/plugins
 ```
 
-![image-20230109160331272](/imgs/image-20230109160331272.png)
+![image-20230109160331272](C:\Users\yanwq\AppData\Roaming\Typora\typora-user-images\image-20230109160331272.png)
 
 3.配置文件
 
@@ -49,11 +40,11 @@ docker run --name elasticsearch -p 9200:9200 -p 9300:9300 \
 > -d elasticsearch:7.14.0
 ```
 
-![image-20230109160537007](/imgs/image-20230109160537007.png)
+![image-20230109160537007](C:\Users\yanwq\AppData\Roaming\Typora\typora-user-images\image-20230109160537007.png)
 
 5.测试正常移动页面
 
-![image-20230109160747537](/imgs/image-20230109160747537.png)
+![image-20230109160747537](C:\Users\yanwq\AppData\Roaming\Typora\typora-user-images\image-20230109160747537.png)
 
 
 
